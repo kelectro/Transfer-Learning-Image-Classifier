@@ -1,4 +1,5 @@
 <html>
+</<title><h2><center>Welcome to the image classifier</center></h2></title>
   <head>
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
@@ -6,14 +7,17 @@
     <!-- knn -->
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
-  <body>
+
+
+
+  <body background="https://cdn.sisense.com/wp-content/uploads/ecommerce-blog-18-356x237.png">
     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
     <button id="class-a">Add A</button>
     <button id="class-b">Add B</button>
     <button id="class-c">Add C</button>
     <div id="console"></div>
     <!-- Add an image that we will use to test -->
-    <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+    <!-- <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/> -->
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>

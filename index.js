@@ -57,8 +57,8 @@ while (true) {
 
       const classes = ['A', 'B', 'C'];
       document.getElementById('console').innerText = `
-        prediction: ${classes[result.classIndex]}\n
-        probability: ${result.confidences[result.classIndex]}
+        PREDICTION: ${classes[result.classIndex]}\n
+        PROBABILITY: ${result.confidences[result.classIndex]}
 
       `;
     }
@@ -72,11 +72,6 @@ while (true) {
     //   document.getElementById("demo").innerHTML = "Good day!";
 
 
-    if (result.confidences[result.classIndex]>0.1) {
-    document.write("<hr>");
-    document.write("welcome");
-    document.write("<hr>");
-  }
     await tf.nextFrame();
   }
 }
